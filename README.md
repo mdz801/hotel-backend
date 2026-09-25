@@ -1,10 +1,12 @@
-# Hotel Management Backend
+# Sistema de Gestión Hotelera — Backend
 
-Backend API for a hotel management system built with **Node.js**, **Express** and **Oracle Database**.
+> **Tipo de proyecto:** Proyecto principal / sistema funcional
 
-The project covers core hotel operations such as authentication, users, hotels, guests, rooms, rates, reservations, payments and additional services.
+Backend para un sistema de gestión hotelera desarrollado con **Node.js**, **Express** y **Oracle Database**.
 
-## Tech Stack
+Es el proyecto más completo de este perfil y cubre distintos procesos de operación hotelera mediante una API REST organizada por módulos.
+
+## Tecnologías
 
 - Node.js
 - Express
@@ -16,21 +18,24 @@ The project covers core hotel operations such as authentication, users, hotels, 
 - CORS
 - dotenv
 
-## Main Features
+## Funcionalidades principales
 
-- JWT authentication and role-based access
-- Hotel and room management
-- Guest management
-- Reservations and availability
-- Check-in / check-out workflows
-- Rates and seasonal pricing
-- Payments
-- Additional services and experiences
-- Membership and loyalty features
-- Ratings and reviews
-- Swagger API documentation
+- Autenticación con JWT
+- Control de acceso por roles
+- Gestión de hoteles
+- Gestión de huéspedes
+- Habitaciones y tipos de habitación
+- Tarifas
+- Reservas
+- Check-in y check-out
+- Pagos
+- Servicios adicionales
+- Experiencias
+- Membresías y fidelización
+- Calificaciones y reseñas
+- Documentación de API con Swagger
 
-## Architecture
+## Arquitectura
 
 ```text
 routes/
@@ -42,31 +47,31 @@ utils/
 server.js
 ```
 
-The project separates routing, request handling and business/database logic to keep the API maintainable.
+El proyecto separa rutas, controladores, servicios y middleware para mantener organizada la lógica de negocio.
 
-## Getting Started
+## Ejecución
 
 ```bash
 npm install
 npm start
 ```
 
-Create a local `.env` file for database credentials, JWT configuration and other environment-specific values.
+La configuración sensible, como credenciales de base de datos y claves JWT, debe mantenerse en un archivo `.env` local.
 
-## Project Status
+## Estado del proyecto
 
-A detailed implementation breakdown is available in [ESTADO_PROYECTO.md](./ESTADO_PROYECTO.md).
+El detalle de módulos e implementación está disponible en:
 
-## Security
+[ESTADO_PROYECTO.md](./ESTADO_PROYECTO.md)
 
-- Password hashing with bcrypt
-- JWT-based authentication
-- Role-based authorization
-- Input validation
-- Environment-based secrets
+## Seguridad
 
-Do not commit credentials or production secrets.
+- Contraseñas protegidas con bcrypt
+- Autenticación mediante JWT
+- Autorización basada en roles
+- Validación de datos de entrada
+- Configuración sensible mediante variables de entorno
 
 ---
 
-**Author:** Miguel Martínez
+**Autor:** Miguel Martínez
